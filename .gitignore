@@ -1,10 +1,9 @@
-# Ignora todo
-*
+# Ignorar la carpeta del backend
+back/
 
-# NO ignores estos archivos
-!.gitignore
-!front/
-!index.html
+# Ignorar archivos de Windows
+desktop.ini
 
-# Permite todo dentro de front recursivamente
-!front/**
+# (opcional) Ignorar archivos temporales del sistema
+.DS_Store
+Thumbs.db
