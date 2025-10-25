@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us - MiSitio</title>
+    <link rel="stylesheet" href="estilos.css" />
+
+    <!-- Librería AlertifyJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">MiSitio</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+      </div>
+      <div class="nav-right">
+        <span id="userName" class="user-name"></span>
+        <button id="loginBtn" class="icon-btn" title="Login">
+          <span class="login-icon">🔒</span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h1>Sobre Nosotros</h1>
+        <p>
+          En <strong>MiSitio</strong> trabajamos para desarrollar soluciones web
+          claras, accesibles y modernas.
+        </p>
+        <p>
+          Buscamos ofrecer experiencias agradables que combinen diseño y
+          funcionalidad.
+        </p>
+        <button id="btnInfo">Más información</button>
+      </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Iniciar Sesión</h2>
+        <form id="formLogin">
+          <input type="text" id="login" placeholder="Usuario" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+            required
+          />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Desarrollado por <strong>José Raúl Ponce Rico</strong> — 22 de octubre
+        de 2025
+      </p>
+    </footer>
+
+    <!-- Librería AlertifyJS -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <script>
+      document.getElementById("btnInfo").addEventListener("click", () => {
+        alertify.alert(
+          "Sobre nosotros",
+          "Gracias por conocer más de nuestro proyecto. ¡Seguimos mejorando cada día!"
+        );
+      });
+    </script>
+  </body>
+</html>

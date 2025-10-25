@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="estilos.css" />
+
+    <!-- Librería AlertifyJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">MiSitio</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+      </div>
+      <div class="nav-right">
+        <span id="userName" class="user-name"></span>
+        <button id="loginBtn" class="icon-btn" title="Login">
+          <span class="login-icon">🔒</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <main>
+      <section id="home">
+        <h1>Bienvenido a MiSitio</h1>
+        <p>
+          Explora contenido interactivo, aprende sobre nuestras funciones y
+          disfruta de una navegación sencilla y moderna.
+        </p>
+        <button id="btnSaludo">Mostrar mensaje</button>
+      </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Iniciar Sesión</h2>
+        <form id="formLogin">
+          <input type="text" id="login" placeholder="Usuario" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+            required
+          />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Desarrollado por <strong>José Raúl Ponce Rico</strong> — 22 de octubre
+        de 2025
+      </p>
+    </footer>
+
+    <!-- Librería AlertifyJS -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <script>
+      // Mensaje en el botón principal
+      document.getElementById("btnSaludo").addEventListener("click", () => {
+        alertify.success(
+          "¡Bienvenido a MiSitio! Esperamos que disfrutes tu visita 😊"
+        );
+      });
+    </script>
+  </body>
+</html>

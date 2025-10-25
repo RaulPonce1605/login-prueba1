@@ -1,0 +1,9 @@
+#Ignora todo
+*
+
+#No ignores esto
+!.gitignore
+
+
+!front/
+!front/** 
