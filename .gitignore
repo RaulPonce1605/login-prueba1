@@ -5,5 +5,5 @@
 !.gitignore
 
 
-!front/
-!front/** 
+!docs/
+!docs/**
