@@ -1,9 +1,9 @@
-#Ignora todo
+# Ignora todo
 *
 
-#No ignores esto
+# NO ignores estos archivos
 !.gitignore
-
-
 !front/
+
+# Permite todo dentro de front recursivamente
 !front/**
