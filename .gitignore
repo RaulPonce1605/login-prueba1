@@ -4,6 +4,7 @@
 # NO ignores estos archivos
 !.gitignore
 !front/
+!index.html
 
 # Permite todo dentro de front recursivamente
 !front/**
